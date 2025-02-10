@@ -33,6 +33,19 @@
 </section>
 
 <section>
+    <h3>Button with prefix and suffix</h3>
+    <app-button>
+        <app-button-prefix>
+            <span class="icon-server"></span>
+        </app-button-prefix>
+         Action
+        <app-button-suffix>
+            <span class="icon-trash"></span>
+        </app-button-suffix>
+    </app-button>
+</section>
+
+<section>
     <h2>Available icons</h2>
     <div class="icons-section">
         @for (item of iconsList; track item) {
