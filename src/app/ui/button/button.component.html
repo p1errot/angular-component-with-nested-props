@@ -1,16 +1,20 @@
-<div class="button-wrap">
+<span class="button-wrap">
     @if (buttonPrefix) {
-        <ng-content select="button-prefix"></ng-content>
+        <button>
+            <ng-content select="app-button-prefix"></ng-content>
+        </button>
     }
+
     <button>
         @if (icon()) {
-            <span class="icon-chevron-left"></span>
+            <span [class]="icon()"></span>
 		}
-
         <ng-content></ng-content>
     </button>
     
     @if (buttonSuffix) {
-        <ng-content select="button-sufix"></ng-content>
+        <button>
+            <ng-content select="app-button-suffix"></ng-content>
+        </button>
     }
-</div>
+</span>

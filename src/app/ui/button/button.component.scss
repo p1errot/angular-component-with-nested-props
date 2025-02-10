@@ -1,0 +1,25 @@
+.button-wrap {
+    display: flex;
+    background: #fff;
+    border: 1px solid #999;
+    border-radius: 4px;
+    width: fit-content;
+    transition: all 250ms ease-in;
+}
+
+.button-wrap:hover {
+    border-color: #1B7EAC;
+    background: #0DB3CF;
+    color: #fff;
+}
+
+.button-wrap button {
+    border: 0;
+    background: transparent;
+    padding: 8px 16px;
+    transition: all 100ms ease-in;
+}
+
+.button-wrap button:active {
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}

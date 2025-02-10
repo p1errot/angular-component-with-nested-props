@@ -1,0 +1,18 @@
+export const ICONS_LIST = [
+    'arrow-left',
+    'arrow-right',
+    'check',
+    'chevron-down',
+    'chevron-left',
+    'chevron-right',
+    'chevron-up',
+    'download',
+    'edit',
+    'eye',
+    'eye-off',
+    'minus',
+    'plus',
+    'server',
+    'settings',
+    'trash',
+]

@@ -12,3 +12,34 @@
     </app-button>
 </section>
 
+<section>
+    <h3>Button with prefix</h3>
+    <app-button>
+        <app-button-prefix>
+            <span class="icon-server"></span>
+        </app-button-prefix>
+        Configure
+    </app-button>
+</section>
+
+<section>
+    <h3>Button with suffix</h3>
+    <app-button>
+        First Action
+        <app-button-suffix>
+            <span class="icon-trash"></span>
+        </app-button-suffix>
+    </app-button>
+</section>
+
+<section>
+    <h2>Available icons</h2>
+    <div class="icons-section">
+        @for (item of iconsList; track item) {
+        <p class="icons-section__box">
+            <span class="icon-{{item}}"></span>{{ item }}
+        </p>
+        }
+    </div>
+</section>
+

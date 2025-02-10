@@ -1,0 +1,11 @@
+/* Add application styles & imports to this file! */
+@import url(./styles/font-icon.css);
+
+:root {
+    --base-font: "Quicksand", serif;
+}
+
+* {
+    font-family: var(--base-font);
+    font-weight: 400;
+}

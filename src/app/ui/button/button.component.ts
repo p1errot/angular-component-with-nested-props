@@ -6,11 +6,15 @@ import { ButtonSuffixDirective } from './button-suffix.directive';
   selector: 'app-button',
   imports: [],
   templateUrl: './button.component.html',
-  styleUrl: './button.component.css'
+  styleUrl: './button.component.scss'
 })
 export class ButtonComponent {
   @ContentChild(ButtonPrefixDirective) buttonPrefix?: ButtonPrefixDirective;
   @ContentChild(ButtonSuffixDirective) buttonSuffix?: ButtonSuffixDirective;
 
-  icon = input('');
+  icon = input('', {
+    transform: (value) => {
+      return value ? `icon-${value}` : value;
+    }
+  });
 }

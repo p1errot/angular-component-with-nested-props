@@ -1,10 +1,7 @@
 import { Directive } from '@angular/core';
 
 @Directive({
-  selector: '[appButtonPrefix]'
+  selector: 'app-button-prefix',
+  standalone: true,
 })
-export class ButtonPrefixDirective {
-
-  constructor() { }
-
-}
+export class ButtonPrefixDirective {}
