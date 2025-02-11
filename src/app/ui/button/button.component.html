@@ -7,7 +7,7 @@
 
     <button>
         @if (icon()) {
-            <span [class]="icon()"></span>
+            <span class="button-icon {{ icon() }}"></span>
 		}
         <ng-content></ng-content>
     </button>

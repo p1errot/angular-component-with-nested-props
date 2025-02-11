@@ -1,3 +1,6 @@
+$base-color: #d7d9d3;
+$secondary-color: #555;
+
 .button-wrap {
     display: flex;
     background: #fff;
@@ -7,12 +10,16 @@
     transition: all 250ms ease-in;
 
     &:hover {
-        border-color: #1B7EAC;
-        background: #0DB3CF;
-        color: #fff;
+        border-color: $secondary-color;
+        background: $base-color;
+
+        button {
+            color: #011215;
+            text-shadow: 0px 0px 4px #ffffff91;
+        }
 
         button:nth-child(n+2) {
-            border-left-color: #1B7EAC;
+            border-left-color: $secondary-color;
         }
     }
 
@@ -20,14 +27,21 @@
         border: 0;
         background: transparent;
         padding: 8px 16px;
-        transition: all 100ms ease-in;
+        transition: all 500ms ease-out;
+        cursor: pointer;
         
         &:active {
             box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+            transition: all 100ms ease-in;
         }
     }
 
     button:nth-child(n+2) {
         border-left: 1px solid #999;
+    }
+
+    .button-icon {
+        vertical-align: baseline;
+        padding-right: 5px;
     }
 }
